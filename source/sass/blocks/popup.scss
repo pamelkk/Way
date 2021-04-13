@@ -1,0 +1,144 @@
+.popup__wrapper {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: none;
+  background-color: $main-header-buttons;
+}
+
+.popup {
+  width: 320px;
+  height: 568px;
+  padding-top: 100px;
+  padding-bottom: 185px;
+  padding-left: 16px;
+  padding-right: 16px;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.popup__button-close {
+  background-image: url("../../img/cross.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  border: none;
+  order: -1;
+  align-self: flex-end;
+  background-color: transparent;
+  position: absolute;
+  top: 18px;
+  cursor: pointer;
+}
+
+.active-popup {
+  display: flex;
+  z-index: 10;
+}
+
+.popup__header {
+  width: 288px;
+  font-size: 25px;
+  line-height: 42.5px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.popup__input {
+  width: 288px;
+  height: 48px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 26px;
+  padding-right: 26px;
+  font-size: 14px;
+  line-height: 17.07px;
+  font-weight: 400;
+  color: $basic-header-footer-contacts;
+  border: 1px solid $border-package;
+
+  &:nth-of-type(n+1) {
+    margin-top: 20px;
+  }
+}
+
+.popup__button {
+  align-self: center;
+  padding: 19px;
+  padding-left: 103px;
+  padding-right: 103px;
+  width: 288px;
+  box-sizing: border-box;
+  background-color: $basic-buttons-complex-pack-active;
+  border: none;
+  color: $main-header-buttons;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12.19px;
+  font-weight: 500;
+  height: 50px;
+  cursor: pointer;
+  letter-spacing: 2px;
+
+  &:active {
+    background-color: $buttons-hover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup {
+    width: 728px;
+    height: 444px;
+    padding-top: 72px;
+    padding-bottom: 89px;
+    padding-left: 397px;
+    padding-right: 61px;
+    background-color: $questions;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 390px;
+      content: "";
+      background-image: url("../../img/popup-bckg.png");
+      width: 338px;
+      height: 444px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .popup__header {
+    width: 237px;
+  }
+
+  .popup__input {
+    width: 270px;
+    height: 50px;
+  }
+
+  .popup__button {
+    padding: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 176px;
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 700;
+  }
+
+  .popup__button-close {
+    right: 20px;
+  }
+}

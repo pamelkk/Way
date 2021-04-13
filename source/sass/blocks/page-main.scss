@@ -1,0 +1,1576 @@
+.page-main {
+display: flex;
+flex-direction: column;
+}
+
+.page-main__top {
+width: 320px;
+height: 423px;
+display: flex;
+flex-direction: column;
+position: relative;
+align-self: center;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background-image: url(../../img/bckg-mountains-mobile.jpg);
+    width: 320px;
+    height: 235px;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
+.page-main__top-header {
+  margin: 0;
+  padding: 0;
+  color: $main-header-buttons;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  padding-top: 81px;
+  width: 280px;
+  text-align: center;
+  min-height: 72px;
+  align-self: center;
+}
+
+.page-main__top-description {
+  margin: 0;
+  padding: 0;
+  padding-top: 102px;
+  width: 288px;
+  line-height: 27.2px;
+  align-self: center;
+  text-align: center;
+  color: $basic-headers-descriptions;
+  letter-spacing: -0.466667px;
+}
+
+.page-main__top-description {
+  font-size: 16px;
+  color: $basic-headers-descriptions;
+}
+
+.page-main__top-button {
+  background-color: $basic-buttons-complex-pack-active;
+  font-weight: 500;
+  font-size: 10px;
+  border: none;
+  color: $main-header-buttons;
+  line-height: 12.19px;
+  padding: 19px;
+  padding-left: 5px;
+  padding-right: 145px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  position: relative;
+  height: 50px;
+  align-self: center;
+  width: 288px;
+  margin-top: 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+
+  &::after {
+    position: absolute;
+    top: 18px;
+    right: 40px;
+    content: "";
+    background-image: url("../../img/arrow.svg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    background-color: $buttons-hover;
+  }
+}
+
+.page-main__top-button {
+  text-decoration: none;
+  color: $main-header-buttons;
+}
+
+.page-main__places {
+  margin-top: 108px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__places-header {
+  margin: 0;
+  align-self: center;
+  color: $basic-headers-descriptions;
+}
+
+.page-main__places-description {
+  margin: 0;
+  margin-top: 20px;
+  align-self: center;
+  width: 288px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: $basic-headers-descriptions;
+  opacity: 70%;
+}
+
+.page-main__places-tours-list {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-main__places-wrapper {
+  position: absolute;
+  top: 365px;
+  left: 36px;
+  width: 215px;
+  height: 61px;
+  background-color: $main-header-buttons;
+  box-sizing: border-box;
+  font-size: 24px;
+  line-height: 29.26px;
+  font-weight: 500;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 61px;
+  color: $basic-headers-descriptions;
+  letter-spacing: -0.415px;
+}
+
+.page-main__places-tours-item {
+  position: relative;
+
+  &:nth-of-type(n+2) {
+    margin-top: 35px;
+  }
+
+  &:nth-of-type(1) .page-main__places-wrapper {
+    padding-left: 62px;
+  }
+
+  &:nth-of-type(2) .page-main__places-wrapper {
+    padding-left: 50px;
+  }
+
+  &:nth-of-type(3) .page-main__places-wrapper {
+    padding-left: 38px;
+  }
+
+  &:nth-of-type(4) .page-main__places-wrapper {
+    padding-left: 35px;
+  }
+
+  &:nth-of-type(5) .page-main__places-wrapper {
+    padding-left: 50px;
+  }
+
+  .page-main__places-img {
+    width: 288px;
+    height: 425px;
+  }
+}
+
+.page-main__tours-description {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.page-main__tours-description-list {
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    content: "";
+    border-top: 1px solid $border-package;
+    width: 305px;
+    height: 1px;
+    opacity: 30%;
+  }
+}
+
+.page-main__tours-description-country {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  align-self: center;
+}
+
+.page-main__tours-description-country-header {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  align-self: center;
+  color: $basic-headers-descriptions;
+}
+
+.page-main__tours-description-about-country {
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 288px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  align-self: center;
+  color: $basic-headers-descriptions;
+  opacity: 70%;
+}
+
+.page-main__tours-description-button,
+.page-main__prices-package-button,
+.page-main__contacts-button {
+  align-self: center;
+  padding: 19px;
+  padding-left: 72px;
+  padding-right: 71px;
+  width: 288px;
+  box-sizing: border-box;
+  background-color: $basic-buttons-complex-pack-active;
+  border: none;
+  color: $main-header-buttons;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12.19px;
+  font-weight: 500;
+  height: 50px;
+  cursor: pointer;
+  letter-spacing: 2px;
+
+  &:active {
+    background-color: $buttons-hover;
+  }
+}
+
+.page-main__tours-description-feedback {
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+  background-color: $main-header-buttons;
+  align-self: center;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 34px;
+  position: absolute;
+}
+
+.page-main__tours-description-feedback-header {
+  margin: 0;
+  align-self: center;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24.38px;
+  font-weight: 500;
+  color: $basic-headers-descriptions;
+  position: relative;
+  letter-spacing: -0.691667px;
+
+  &::after {
+    position: absolute;
+    top: 37px;
+    right: 1px;
+    content: "";
+    border-top: 1px solid $basic-buttons-complex-pack-active;
+    width: 68px;
+    height: 1px;
+  }
+}
+
+.page-main__tours-description-feedback blockquote {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__tours-description-feedback cite {
+  color: $basic-headers-descriptions;
+  font-style: normal;
+  text-align: center;
+  align-self: center;
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 500;
+  letter-spacing: -0.466667px;
+}
+
+.page-main__tours-description-feedback-text {
+  margin: 0;
+  align-self: center;
+  text-align: center;
+  margin-top: 31px;
+  margin-bottom: 68px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: $basic-headers-descriptions;
+  opacity: 70%;
+  position: relative;
+  letter-spacing: -0.408333px;
+
+  &::after {
+    position: absolute;
+    bottom: -50px;
+    right: 115px;
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+}
+
+.page-main__tours-description-item {
+  display: none;
+  flex-direction: column;
+  position: relative;
+
+  &:nth-of-type(1) .page-main__tours-description-feedback {
+    top: 675px;
+  }
+
+  &:nth-of-type(2) .page-main__tours-description-feedback {
+    top: 510px;
+  }
+
+  &:nth-of-type(3) .page-main__tours-description-feedback {
+    top: 480px;
+  }
+
+  &:nth-of-type(4) .page-main__tours-description-feedback {
+    top: 450px;
+  }
+
+  &:nth-of-type(5) .page-main__tours-description-feedback {
+    top: 500px;
+  }
+
+  &:nth-of-type(1) .page-main__tours-description-feedback-text {
+    &::after {
+      background-image: url("../../img/user-greece.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:nth-of-type(2) .page-main__tours-description-feedback-text {
+    &::after {
+      background-image: url("../../img/user-albania.png");
+    }
+  }
+
+  &:nth-of-type(3) .page-main__tours-description-feedback-text {
+    &::after {
+      background-image: url("../../img/user-macedonia.png");
+    }
+  }
+
+  &:nth-of-type(4) .page-main__tours-description-feedback-text {
+    &::after {
+      background-image: url("../../img/user-montenegro.png");
+    }
+  }
+
+  &:nth-of-type(5) .page-main__tours-description-feedback-text {
+    &::after {
+      background-image: url("../../img/user-croatia.png");
+    }
+  }
+}
+
+.page-main__prices {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 111px;
+  margin-bottom: 50px;
+}
+
+.page-main__prices-wrapper {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__prices-header {
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  color: $basic-headers-descriptions;
+  align-self: center;
+  text-align: center;
+}
+
+.page-main__prices-description {
+  margin: 0;
+  align-self: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 27.2px;
+  font-weight: 400;
+  color: $basic-headers-descriptions;
+  opacity: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 288px;
+}
+
+.page-main__prices-contacts-header {
+  margin: 0;
+  align-self: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 500;
+  color: $basic-header-footer-contacts;
+}
+
+.page-main__prices-contacts-phone {
+  align-self: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  color: $basic-buttons-complex-pack-active;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.page-main__prices-package {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 614px;
+  width: 288px;
+  border-radius: 6px;
+  border: 1px solid $border-package;
+
+  &:hover {
+    border: 3px solid $basic-buttons-complex-pack-active;
+  }
+}
+
+.page-main__prices-package-header {
+  margin: 0;
+  align-self: center;
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  max-width: 248px;
+}
+
+.page-main__prices-package-header-price {
+  align-self: center;
+  text-align: center;
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 11px;
+  max-width: 248px;
+}
+
+.page-main__prices-package-description {
+  margin: 0;
+  align-self: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 31px;
+  color: $basic-headers-descriptions;
+  width: 248px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    content: "";
+    border-top: 1px solid $basic-buttons-complex-pack-active;
+    opacity: 50%;
+    width: 248px;
+    height: 1px;
+  }
+}
+
+.page-main__prices-package-features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 3px;
+  padding-bottom: 30px;
+}
+
+.page-main__prices-package-features-item {
+  width: 218px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: $basic-headers-descriptions;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 5px;
+    left: -30px;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-of-type(n+2) {
+    margin-top: 10px;
+  }
+}
+
+.page-main__prices-package-complex .page-main__prices-package-header {
+    color: $basic-buttons-complex-pack-active;
+  }
+
+.page-main__prices-package-complex .page-main__prices-package-header-price {
+  color: $basic-buttons-complex-pack-active;
+  margin-left: 21px;
+}
+
+.page-main__prices-package-complex .page-main__prices-package-features-item {
+  &::after {
+    background-image: url("../../img/check-black.svg");
+  }
+}
+
+.page-main__prices-package-economy {
+  margin-top: 30px;
+}
+
+.page-main__prices-package-economy .page-main__prices-package-header {
+  color: $basic-header-footer-contacts;
+  opacity: 70%;
+  letter-spacing: -1.27273px;
+}
+
+.page-main__prices-package-economy .page-main__prices-package-header-price {
+  color: $basic-header-footer-contacts;
+  opacity: 70%;
+}
+
+.page-main__prices-package-economy .page-main__prices-package-description {
+  &::after {
+    border-top: 1px solid $border-package;
+    opacity: 100%;
+  }
+}
+
+.page-main__prices-package-economy .page-main__prices-package-features-item {
+  &::after {
+    background-image: url("../../img/check-red.svg");
+    top: 10px;
+    left: -25px;
+  }
+}
+
+.page-main__prices-package-button {
+  margin-top: auto;
+}
+
+.page-main__contacts {
+  align-self: center;
+}
+
+.page-main__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: $questions;
+  min-height: 441px;
+}
+
+.page-main__contacts-header {
+  align-self: center;
+  width: 288px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $basic-header-footer-contacts;
+  margin: 0;
+}
+
+.page-main__contacts-description {
+  align-self: center;
+  width: 288px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $basic-header-footer-contacts;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.page-main__contacts-button {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 103px;
+  padding-right: 103px;
+  margin-top: auto;
+}
+
+.page-main__contacts-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main__contacts-input {
+  width: 288px;
+  height: 48px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 17.07px;
+  font-weight: 400;
+  color: $basic-header-footer-contacts;
+  border: 1px solid $border-package;
+
+  &:nth-of-type(n+1) {
+    margin-top: 20px;
+  }
+}
+
+.page-main__contacts-tel-input {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    content: "1";
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.page-main__tours-slider {
+  display: flex;
+  margin-top: 40px;
+}
+
+.page-main__tours-slider-list {
+  list-style: none;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-main__tours-slider-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: $basic-headers-descriptions;
+  opacity: 30%;
+  font-size: 20px;
+  line-height: 24.38px;
+  font-weight: 500;
+}
+
+.page-main__tours-slider-item {
+  letter-spacing: -0.415px;
+
+  &:nth-of-type(n+2) {
+    margin-left: 100px;
+  }
+}
+
+.active-slider {
+  color: $basic-buttons-complex-pack-active;
+  opacity: 100%;
+}
+
+.page-main__tours-description-item-active {
+  display: flex;
+}
+
+.page-main__tours-slider-button {
+  padding: 0;
+}
+
+.page-main__tours-description-img {
+  align-self: center;
+  width: 320px;
+  height: 415px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__tours-description-img {
+    width: 768px;
+  }
+
+  .page-main {
+    width: 768px;
+  }
+
+  .page-main__top {
+    width: 768px;
+    height: 344px;
+
+      &::after {
+        top: 0;
+        right: 0;
+        background-image: url(../../img/bckg-mountains-tablet.png);
+        width: 768px;
+        height: 344px;
+      }
+  }
+
+  .page-main__top-header {
+    font-size: 30px;
+    line-height: 45px;
+    padding-top: 60px;
+    width: 398px;
+    min-height: 45px;
+  }
+
+  .page-main__top-description {
+    padding-top: 15px;
+    color: $main-header-buttons;
+    width: 398px;
+  }
+
+  .page-main__top-button {
+    margin-top: 15px;
+    padding-left: 40px;
+    padding-right: 107px;
+    width: 250px;
+  }
+
+  .page-main__places {
+    margin-top: 80px;
+  }
+
+  .page-main__places-header {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 600;
+  }
+
+  .page-main__places-description {
+    width: 343px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  .page-main__places-tours-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-main__places-tours-item {
+    &:nth-of-type(n+2) {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(2n) {
+      margin-left: 29px;
+    }
+
+    &:nth-of-type(n+3) {
+      margin-top: 20px;
+    }
+  }
+
+  .page-main__tours-description-country {
+    margin-bottom: 30px;
+  }
+
+  .page-main__tours-description-country-header {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .page-main__tours-description-about-country {
+    width: 726px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.466667px;
+  }
+
+  .page-main__tours-description-button {
+    padding-left: 52px;
+    padding-right: 53px;
+    width: 250px;
+  }
+
+  .page-main__tours-description-feedback {
+    width: 382px;
+    padding-bottom: 30px;
+  }
+
+  .page-main__tours-description-feedback-header {
+    text-align: left;
+    font-size: 30px;
+    line-height: 36.57px;
+    align-self: flex-start;
+    padding-left: 30px;
+
+    &::after {
+      top: 45px;
+      right: 40px;
+    }
+  }
+
+  .page-main__tours-description-feedback-text {
+    text-align: left;
+    margin-top: 32px;
+    margin-bottom: 44px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &::after {
+      bottom: -73px;
+      left: 31px;
+    }
+  }
+
+  .page-main__tours-description-feedback blockquote cite {
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 84px;
+  }
+
+  .page-main__prices {
+    margin-top: 112px;
+    margin-bottom: 125px;
+    width: 726px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page-main__prices-wrapper {
+    width: 726px;
+  }
+
+  .page-main__prices-header {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .page-main__prices-description {
+    opacity: 70%;
+    margin-bottom: 30px;
+    width: 726px;
+  }
+
+  .page-main__prices-contacts-phone {
+    margin-bottom: 30px;
+  }
+
+  .page-main__prices-package {
+    height: 629px;
+    box-sizing: border-box;
+
+    &:nth-of-type(1) {
+      margin-left: 71px;
+    }
+
+    &:nth-of-type(2n) {
+      margin-left: 50px;
+    }
+
+    &:nth-of-type(2n+1) {
+      margin-left: 71px;
+    }
+  }
+
+  .page-main__prices-package-economy {
+    margin-top: 0;
+  }
+
+  .page-main__contacts {
+    position: relative;
+    width: 768px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      background-image: url("../../img/bckg-sunset-tablet.png");
+      width: 768px;
+      height: 456px;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  .page-main__contacts-wrapper {
+    width: 658px;
+    height: 311px;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: auto;
+    margin-top: 70px;
+    margin-left: 55px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-main__contacts-header {
+    width: 345px;
+    margin-left: 106px;
+  }
+
+  .page-main__contacts-input {
+    width: 269px;
+    height: 50px;
+    padding-left: 26px;
+
+    &:nth-of-type(n+1) {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(n+3) {
+      margin-top: 20px;
+    }
+
+    &:nth-of-type(2n) {
+      margin-left: 20px;
+    }
+  }
+
+  .page-main__contacts-button {
+    padding-left: 84px;
+    padding-right: 84px;
+    margin-top: 0;
+    width: 250px;
+    height: 50px;
+    align-self: center;
+    margin-left: 154px;
+  }
+
+  .page-main__contacts-description {
+    width: 558px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 24px;
+  }
+
+  .page-main__contacts-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 558px;
+    margin-bottom: 20px;
+  }
+
+  .page-main__tours-description-list {
+    &::after {
+      left: 20px;
+      width: 899px;
+    }
+  }
+
+  .page-main__tours-description-item {
+    &:nth-of-type(1) .page-main__tours-description-feedback {
+      top: 400px;
+    }
+
+    &:nth-of-type(2) .page-main__tours-description-feedback {
+      top: 360px;
+    }
+
+    &:nth-of-type(3) .page-main__tours-description-feedback {
+      top: 360px;
+    }
+
+    &:nth-of-type(4) .page-main__tours-description-feedback {
+      top: 340px;
+    }
+
+    &:nth-of-type(5) .page-main__tours-description-feedback {
+      top: 360px;
+    }
+  }
+
+  .page-main__tours-slider-list {
+    padding: 0;
+  }
+
+  .page-main__tours-slider {
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-main__places-tours-item {
+    &:nth-of-type(1) .page-main__places-wrapper {
+      top: 369px;
+      left: 70px;
+    }
+
+    &:nth-of-type(2) .page-main__places-wrapper {
+      top: 369px;
+      left: 70px;
+    }
+
+    &:nth-of-type(3) .page-main__places-wrapper {
+      top: 369px;
+      left: 70px;
+    }
+
+    &:nth-of-type(4) .page-main__places-wrapper {
+      top: 369px;
+      left: 70px;
+    }
+
+    &:nth-of-type(5) .page-main__places-wrapper {
+      top: 369px;
+      left: 70px;
+    }
+  }
+
+  .page-main__tours-description-img {
+    width: 430px;
+    height: 596px;
+    margin-left: 100px;
+  }
+
+  .page-main {
+    width: auto;
+  }
+
+  .page-main__top {
+    width: auto;
+    min-height:860px;
+    box-sizing: border-box;
+
+      &::after {
+        top: 0;
+        right: -220px;
+        background-image: url(../../img/bckg-mountains-desktop.png);
+        width: 1920px;
+        height: 860px;
+      }
+  }
+
+  .page-main__top-header {
+    font-size: 55px;
+    line-height: 80px;
+    padding-top: 185px;
+    width: 412px;
+    min-height: 159px;
+    text-align: left;
+    padding-left: 1075px;
+  }
+
+  .page-main__top-description {
+    padding-top: 30px;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 1075px;
+  }
+
+  .page-main__top-button {
+    margin-top: 39px;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 179px;
+    width: 340px;
+    height: 75px;
+    font-size: 12px;
+    margin-left: 1020px;
+
+    &::after {
+      top: 30px;
+      right: 35px;
+    }
+  }
+
+  .page-main__places {
+    margin-top: 199px;
+    width: 1170px;
+    align-self: center;
+  }
+
+  .page-main__places-header {
+    align-self: flex-start;
+    font-size: 55px;
+    line-height: 80px;
+    font-weight: 600;
+    width: 358px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 190px;
+      left: 0;
+      content: "";
+      border-top: 4px solid $basic-buttons-complex-pack-active;
+      width: 229px;
+      height: 4px;
+    }
+  }
+
+  .page-main__places-description {
+    align-self: flex-start;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    width: 328px;
+    text-align: left;
+    margin-top: 64px;
+    margin-bottom: 56px;
+  }
+
+  .page-main__places-tours-item {
+    width: 350px;
+    height: 430px;
+
+    &:nth-of-type(2n) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(n+3) {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(n+2) {
+      margin-left: 60px;
+    }
+
+    &:nth-of-type(n+4) {
+      margin-top: 101px;
+    }
+
+    &:nth-of-type(5) {
+      margin-left: 120px;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "смотреть подробнее";
+        width: 270px;
+        height: 77px;
+        color: $main-header-buttons;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 25px;
+        padding-left: 25px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        border: 1px solid $border-shadow;
+        background-color: transparent;
+        margin-left: 42px;
+        margin-top: 177px;
+        z-index: 10;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background-color: $shadow;
+        width: 350px;
+        height: 430px;
+      }
+    }
+  }
+
+  .page-main__tours-description-country-header {
+    font-size: 55px;
+    line-height: 90px;
+    font-weight: 600;
+    position: relative;
+    text-align: left;
+    align-self: flex-start;
+
+    &::after {
+      position: absolute;
+      top: 99px;
+      left: 0;
+      content: "";
+      border-top: 3px solid $basic-buttons-complex-pack-active;
+      width: 175px;
+      height: 3px;
+    }
+  }
+
+  .page-main__tours-description-about-country {
+    margin-top: 53px;
+    margin-bottom: 50px;
+    text-align: left;
+    width: 370px;
+  }
+
+  .page-main__tours-description-button {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 700;
+    align-self: flex-start;
+    height: 75px;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: $buttons-hover;
+    }
+  }
+
+  .page-main__tours-description-feedback-text {
+    margin-bottom: 35px;
+
+    &::after {
+      bottom: -65px;
+    }
+  }
+
+  .page-main__prices {
+    width: auto;
+    margin-top: 220px;
+    margin-bottom: 138px;
+  }
+
+  .page-main__prices-wrapper {
+    order: 1;
+    align-self: flex-start;
+    width: auto;
+    margin-left: 111px;
+    margin-top: 117px;
+  }
+
+  .page-main__prices-header {
+    font-size: 55px;
+    line-height: 90px;
+    font-weight: 600;
+    position: relative;
+    align-self: flex-start;
+
+    &::after {
+      position: absolute;
+      top: 99px;
+      left: 0;
+      content: "";
+      border-top: 3px solid $basic-buttons-complex-pack-active;
+      width: 175px;
+      height: 3px;
+    }
+  }
+
+  .page-main__prices-package {
+    width: 370px;
+    min-height: 672px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background-color: $main-header-buttons;
+
+    &:nth-of-type(2n) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(n+3) {
+      margin-left: 30px;
+    }
+  }
+
+  .page-main__prices-description {
+    margin-bottom: 60px;
+    margin-top: 53px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27.2px;
+    text-align: left;
+    align-items: flex-start;
+    width: 299px;
+  }
+
+  .page-main__prices-contacts-header {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .page-main__prices-contacts-phone {
+    margin-bottom: 0;
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: $telephone;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: -50px;
+      content: "";
+      background-image: url("../../img/phone-red.svg");
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .page-main__prices-package-header {
+    text-align: left;
+    font-size: 28px;
+    justify-content: center;
+  }
+
+  .page-main__prices-package-header-price {
+    text-align: right;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 40px;
+    align-self: center;
+  }
+
+  .page-main__prices-package-description {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 59px;
+
+    &::after {
+      width: 310px;
+      left: 0;
+    }
+  }
+
+  .page-main__prices-package-features-list {
+    padding-right: 0;
+    padding-left: 30px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .page-main__prices-package-features-item {
+    &:nth-of-type(n+2) {
+      margin-top: 15px;
+    }
+  }
+
+  .page-main__prices-package-button {
+    padding: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 310px;
+    height: 75px;
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 700;
+
+    &:hover {
+      background-color: $buttons-hover;
+      padding-top: 38px;
+      padding-left: 28px;
+      padding-right: 28px;
+      padding-bottom: 28px;
+    }
+  }
+
+  .page-main__contacts {
+    &::after {
+      top: 0;
+      left: -205px;
+      background-image: url(../../img/bckg-sunset-desktop.png);
+      width: 844px;
+      height: 455px;
+    }
+  }
+
+  .page-main__contacts-wrapper {
+    width: 656px;
+    height: 315px;
+    margin-left: 320px;
+    padding-top: 50px;
+    padding-bottom: 49px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-main__contacts-header {
+    margin-left: 103px;
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+
+  .page-main__contacts-description {
+    width: 557px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .page-main__contacts-form {
+    width: 557px;
+    margin-bottom: 25px;
+    flex-direction: row;
+  }
+
+  .page-main__contacts-input {
+    &:nth-of-type(2n) {
+      margin-left: 18px;
+    }
+  }
+
+  .page-main__contacts-button {
+    padding-left: 40px;
+    padding-right: 39px;
+    width: 176px;
+    margin-left: 200px;
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 700;
+    padding-top: 18px;
+    padding-bottom: 17px;
+  }
+
+  .page-main__tours-description-list {
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 110px;
+    width: auto;
+
+    &::after {
+      left: 0;
+      top: -100px;
+    }
+  }
+
+  .page-main__tours-description {
+    position: relative;
+    width: 1170px;
+
+    &::after {
+      position: absolute;
+      top: 190px;
+      right: -137px;
+      content: "";
+      background-image: url(../../img/card.svg);
+      z-index: -1;
+      width: 1444px;
+      height: 1089px;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  .page-main__tours-description-country {
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+
+  .page-main__tours-description-item {
+    width: 1170px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    &:nth-of-type(1) .page-main__tours-description-feedback {
+      top: 120px;
+    }
+
+    &:nth-of-type(2) .page-main__tours-description-feedback {
+      top: 120px;
+    }
+
+    &:nth-of-type(3) .page-main__tours-description-feedback {
+      top: 120px;
+    }
+
+    &:nth-of-type(4) .page-main__tours-description-feedback {
+      top: 120px;
+    }
+
+    &:nth-of-type(5) .page-main__tours-description-feedback {
+      top: 120px;
+    }
+  }
+
+  .page-main__tours-description-feedback-header {
+    &::after {
+      top: 45px;
+      right: 47px;
+    }
+  }
+
+  .page-main__tours-description-feedback {
+    margin-left: -112px;
+    right: 100px;
+    z-index: 1;
+  }
+
+  .page-main__places-tours-item {
+    .page-main__places-img {
+      width: 350px;
+      height: 430px;
+    }
+  }
+}

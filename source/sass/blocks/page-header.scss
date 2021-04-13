@@ -1,0 +1,228 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  flex-wrap: wrap;
+  align-self: center;
+  box-sizing: border-box;
+  min-height: 50px;
+}
+
+.page-header__nav-link {
+  text-decoration: none;
+
+  &:visited {
+    color: $basic-header-footer-contacts;
+  }
+}
+
+.page-header__link {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-top: 19px;
+  height: 15px;
+}
+
+.page-header__logo {
+  align-self: center;
+}
+
+.page-header__menu {
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/menu.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  cursor: pointer;
+}
+
+.page-header__opened-menu {
+  background-image: url("../../img/cross.svg");
+  background-color: transparent;
+  margin-top: 15px;
+  margin-right: 15px;
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+}
+
+.page-header__phone {
+  display: none;
+}
+
+.page-header__nav-wrapper {
+  width: 320px;
+  min-height: 568px;
+  background-color: $main-header-buttons;
+}
+
+.page-header__nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__nav-item {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 17px;
+  background-color: $menu;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    content: "";
+    background-image: url("../../img/arrow-menu.svg");
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-of-type(n+2) {
+    margin-top: 30px;
+  }
+
+  &:nth-of-type(1) {
+    margin-top: 80px;
+  }
+}
+
+.page-header__phone {
+  font-weight: 400;
+  color: $basic-header-footer-contacts;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.page-header__nav-wrapper-inactive {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+.page-header {
+  width: 768px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+  .page-header__menu {
+    width: 72px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../img/menu-tablet.svg");
+    background-repeat: no-repeat;
+    background-size: 72px 50px;
+  }
+
+  .page-header__nav-wrapper {
+    width: 768px;
+  }
+
+  .page-header__opened-menu {
+    background-image: url("../../img/cross.svg");
+    background-color: transparent;
+    background-size: 40px 40px;
+    margin-right: 15px;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: auto;
+    min-width: 1024px;
+    margin-top: 34px;
+    margin-bottom: 33px;
+    margin-right: 386px;
+    margin-left: 375px;
+  }
+
+  .page-header__menu {
+    display: none;
+  }
+
+  .page-header__nav-wrapper {
+    display: flex;
+    background-color: $main-header-buttons;
+    width: auto;
+    min-height: auto;
+    min-width: 196px;
+  }
+
+  .page-header__nav-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__nav {
+    align-self: center;
+  }
+
+  .page-header__phone {
+    display: block;
+    align-self: center;
+    margin-left: 89px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: -40px;
+      content: "";
+      background-image: url(../../img/phone-black.svg);
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      color: $basic-buttons-complex-pack-active;
+
+      &::after {
+        background-image: url(../../img/phone-red.svg);
+      }
+    }
+  }
+
+  .page-header__nav-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.07px;
+    padding: 0;
+    background-color: transparent;
+
+    &::after {
+      display: none;
+    }
+
+    &:nth-of-type(n+2) {
+      margin: 0;
+      margin-left: 40px;
+    }
+
+    &:nth-of-type(n+2) {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(1) {
+      margin-top: 0;
+    }
+  }
+
+  .page-header__nav-link {
+    &:hover {
+      color: $basic-buttons-complex-pack-active;
+      cursor: pointer;
+    }
+  }
+}

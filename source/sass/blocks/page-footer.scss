@@ -1,0 +1,368 @@
+.page-footer {
+  width: 296px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__promo {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 288px;
+}
+
+.page-footer__promo-header {
+  width: 288px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 0;
+  color: $basic-header-footer-contacts;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.page-footer__promo-description {
+  width: 288px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  align-self: center;
+  margin: 0;
+  color: $basic-header-footer-contacts;
+  opacity: 70%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  min-height: 167px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid $border-contacts;
+  border-bottom: 1px solid $border-contacts;
+}
+
+.page-footer__contacts-header {
+  margin: 0;
+  width: 249px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  align-self: center;
+  text-align: center;
+  color: $basic-header-footer-contacts;
+  margin-bottom: 20px;
+}
+
+.page-footer__contacts-link {
+  align-self: center;
+  text-align: center;
+  max-width: 200px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  color: $basic-buttons-complex-pack-active;
+  position: relative;
+
+  &:nth-of-type(n+2) {
+    margin-top: 15px;
+  }
+
+  &::after {
+    position: absolute;
+    top: -3px;
+    left: -40px;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+  }
+}
+
+.page-footer__contacts-link-phone {
+  font-size: 16px;
+  line-height: 32px;
+
+  &::after {
+    background-image: url("../../img/phone-grey.svg");
+  }
+}
+
+.page-footer__contacts-link-mail {
+  &::after {
+    background-image: url("../../img/letter.svg");
+  }
+}
+
+.page-footer__contacts-link-desktop {
+  display: none;
+}
+
+.page-footer__more-offers {
+  margin-top: 70px;
+  padding-bottom: 20px;
+  padding-left: 11px;
+  padding-right: 21px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.page-footer__more-offers-header {
+  width: 288px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  align-self: center;
+  margin: 0;
+  color: $basic-header-footer-contacts;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-footer__more-offers-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 134px;
+
+  &:nth-of-type(2n) {
+    margin-left: 20px;
+  }
+
+  &:nth-of-type(n+3) {
+    margin-top: 20px;
+  }
+
+  &:nth-of-type(2n+1) {
+    margin-left: 75px;
+  }
+
+  &:nth-of-type(1) {
+    margin-left: 0;
+  }
+}
+
+.page-footer__more-offers-item {
+  width: 134px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  align-self: center;
+  color: $basic-header-footer-contacts;
+  opacity: 50%;
+  margin-top: 10px;
+  text-align: center;
+
+  &:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  &:nth-of-type(6n) {
+    margin-top: 0;
+  }
+}
+
+.page-footer__more-offers-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 288px;
+}
+.page-footer__more-offers-link {
+  text-decoration: none;
+  color: $basic-header-footer-contacts;
+  opacity: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 155px;
+  }
+
+  .page-footer__promo {
+    text-align: center;
+    grid-template-columns: 726px;
+  }
+
+  .page-footer__promo-header {
+    max-width: 726px;
+    position: relative;
+    margin-left: 240px;
+
+    &::after {
+      position: absolute;
+      top: -30px;
+      left: -220px;
+      content: "";
+      border-top: 1px solid $border-contacts;
+      width: 726px;
+      height: 1px;
+    }
+  }
+
+  .page-footer__promo-description {
+    width: 726px;
+    opacity: 50%;
+    margin-bottom: 50px;
+  }
+
+  .page-footer__contacts {
+    width: 352px;
+    height: 177px;
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 93px;
+    border: none;
+    border-left: 1px solid $border-contacts;
+  }
+
+  .page-footer__contacts-header {
+    margin: 0;
+    width: 154px;
+    align-self: flex-start;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .page-footer__contacts-link {
+    align-self: flex-start;
+    text-align: left;
+    max-width: 168px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    margin-left: 41px;
+
+    &:nth-of-type(n+2) {
+      margin-top: 16px;
+    }
+  }
+
+  .page-footer__more-offers {
+    margin-top: 0;
+    padding-bottom: 30px;
+    padding-left: 21px;
+    padding-right: 50px;
+    width: 416px;
+  }
+
+  .page-footer__more-offers-header {
+    width: 249px;
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .page-footer__more-offers-wrapper {
+    width: 395px;
+    box-sizing: border-box;
+  }
+
+  .page-footer__more-offers-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 95px;
+
+    &:nth-of-type(2n) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(n+3) {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(2n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(1) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(n+2) {
+      margin-left: 30px;
+    }
+
+    &:nth-of-type(n+4) {
+      margin-top: 20px;
+    }
+  }
+
+  .page-footer__more-offers-item {
+    width: 95px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: auto;
+    flex-direction: row;
+    margin-top: 240px;
+  }
+
+  .page-footer__promo {
+    padding-left: 49px;
+    text-align: left;
+    grid-template-columns: 320px;
+  }
+
+  .page-footer__promo-header {
+    max-width: 320px;
+    width: 292px;
+    text-align: left;
+    margin-top: 0;
+    align-self: flex-start;
+    margin-left: 0;
+  }
+
+  .page-footer__promo-description {
+    width: 320px;
+    opacity: 50%;
+    text-align: left;
+  }
+
+  .page-footer__contacts {
+    height: 189px;
+    border-right: 1px solid $border-contacts;
+    padding-right: 33px;
+    width: 390px;
+  }
+
+  .page-footer__contacts-link-mail {
+    display: none;
+  }
+
+  .page-footer__contacts-link-desktop {
+    display: block;
+
+    &::after {
+      background-image: url("../../img/letter.svg");
+    }
+  }
+
+  .page-footer__more-offers {
+    margin: 0;
+    padding: 0;
+    width: 389px;
+  }
+
+  .page-footer__promo-header::after {
+    display: none;
+  }
+}

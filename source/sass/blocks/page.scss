@@ -1,0 +1,31 @@
+.page {
+  width: auto;
+  overflow-x: hidden;
+  font-family: $font-main;
+}
+
+@media (min-width: $tablet-width) {
+  .page {
+    display: flex;
+    width: auto;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page {
+    width: auto;
+    overflow-x: hidden;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip-path: rect(1px, 1px, 1px, 1px);
+}
