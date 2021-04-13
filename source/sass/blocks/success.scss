@@ -1,14 +1,14 @@
 .success__wrapper {
   width: 320px;
   background-color: $questions;
-  height:444px;
+  height: 444px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .success__button-close {
-  background-image: url("../../img/cross.svg");
+  background-image: url("../img/cross.svg");
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;

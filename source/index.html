@@ -5,7 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HTML Academy: Way</title>
-  <link href="../source/normalize.css" rel="stylesheet" />
+  <link href="css/min.css" rel="stylesheet" />
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font">
 </head>
 
 <body class="page-body">
@@ -21,8 +22,6 @@
       </nav>
       <a class="page-header__phone" href="tel:849978468446">+7(499)-784-684-46</a>
     </div>
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="preload" href="../source/fonts/Montserrat-Regular.woff" as="font">
   </header>
   <main class="page-main">
     <div class="page-main__top">
@@ -310,18 +309,18 @@
         времяпрепровождением</p>
     </section>
   </footer>
-  <div class="popup__wrapper">
-    <div class="popup">
-      <h6 class="popup__header">Купить тур </h6>
-      <button class="popup__button-close" title="Закрыть окно"></button>
-      <form class="popup__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-        <label class="popup__label visually-hidden" for="tel-popup">Телефон</label>
-        <input class="popup__input" type="tel" id="tel-popup" name="tel" placeholder="+7 Введите 10 цифр номера"
+  <div class="popup">
+    <div class="popup__wrapper">
+      <h6 class="popup__wrapper-header">Купить тур </h6>
+      <button class="popup__wrapper-button-close" title="Закрыть окно"></button>
+      <form class="popup__wrapper-form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+        <label class="visually-hidden" for="tel-popup">Телефон</label>
+        <input type="tel" id="tel-popup" name="tel" placeholder="+7 Введите 10 цифр номера"
           required autofocus />
-        <label class="popup__label visually-hidden" for="email-popup">E-mail</label>
-        <input class="popup__input" type="email" id="email-popup" name="email" placeholder="E-mail" />
+        <label class="visually-hidden" for="email-popup">E-mail</label>
+        <input type="email" id="email-popup" name="email" placeholder="E-mail" />
+        <button type="submit">отправить</button>
       </form>
-      <button class="popup__button" type="submit">отправить</button>
     </div>
   </div>
   <template id="success">
@@ -330,7 +329,7 @@
       <p class="success__message">Форма успешно отправлена, <br>спасибо! :)</p>
     </div>
   </template>
-  <script src="js/min-js.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-.popup__wrapper {
+.popup {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -8,7 +8,7 @@
   background-color: $main-header-buttons;
 }
 
-.popup {
+.popup__wrapper {
   width: 320px;
   height: 568px;
   padding-top: 100px;
@@ -20,8 +20,8 @@
   position: relative;
 }
 
-.popup__button-close {
-  background-image: url("../../img/cross.svg");
+.popup__wrapper-button-close {
+  background-image: url("../img/cross.svg");
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -34,12 +34,12 @@
   cursor: pointer;
 }
 
-.active-popup {
+.popup--active {
   display: flex;
   z-index: 10;
 }
 
-.popup__header {
+.popup__wrapper-header {
   width: 288px;
   font-size: 25px;
   line-height: 42.5px;
@@ -49,13 +49,12 @@
   margin-bottom: 30px;
 }
 
-.popup__form {
+.popup__wrapper-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 
-.popup__input {
+.popup__wrapper-form input {
   width: 288px;
   height: 48px;
   box-sizing: border-box;
@@ -74,7 +73,7 @@
   }
 }
 
-.popup__button {
+.popup__wrapper-form button {
   align-self: center;
   padding: 19px;
   padding-left: 103px;
@@ -98,7 +97,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .popup {
+  .popup__wrapper {
     width: 728px;
     height: 444px;
     padding-top: 72px;
@@ -112,23 +111,27 @@
       top: 0;
       right: 390px;
       content: "";
-      background-image: url("../../img/popup-bckg.png");
+      background-image: url("../img/popup-bckg.png");
       width: 338px;
       height: 444px;
       background-repeat: no-repeat;
     }
   }
 
-  .popup__header {
+  .popup__wrapper-header {
     width: 237px;
   }
 
-  .popup__input {
+  .popup__wrapper-form input {
     width: 270px;
     height: 50px;
   }
 
-  .popup__button {
+  .popup__wrapper-form {
+    margin-bottom: 0;
+  }
+
+  .popup__wrapper-form button {
     padding: 18px;
     padding-left: 40px;
     padding-right: 40px;
@@ -136,9 +139,10 @@
     font-size: 12px;
     line-height: 14.63px;
     font-weight: 700;
+    margin-top: 20px;
   }
 
-  .popup__button-close {
+  .popup__wrapper-button-close {
     right: 20px;
   }
 }

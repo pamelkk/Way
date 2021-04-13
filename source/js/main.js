@@ -12,8 +12,9 @@ const tourSliderMontenegro = document.querySelector(".page-main__tours-descripti
 const tourSliderCroatia = document.querySelector(".page-main__tours-description-item-croatia");
 const buyTourTours = document.querySelectorAll(".page-main__tours-description-button");
 const buyTourPrices = document.querySelectorAll(".page-main__prices-package-button");
-const popup = document.querySelector(".popup__wrapper");
-const closePopup = document.querySelector(".popup__button-close");
+const popup = document.querySelector(".popup");
+const pageElement = document.querySelector(".page");
+const closePopup = document.querySelector(".popup__wrapper-button-close");
 const ESC_KEYCODE = 27;
 
 menu.classList.add("page-header__nav-wrapper-inactive");
@@ -32,23 +33,27 @@ buttonOpen.addEventListener("click", function (evt) {
 
 for (let buyTourTour of buyTourTours) {
   buyTourTour.addEventListener("click", function () {
-    popup.classList.add("active-popup");
+    popup.classList.add("popup--active");
+    pageElement.classList.add("page--inactive");
   });
 }
 
 for (let buyTourPrice of buyTourPrices) {
   buyTourPrice.addEventListener("click", function () {
-    popup.classList.add("active-popup");
+    popup.classList.add("popup--active");
+    pageElement.classList.add("page--inactive");
   });
 }
 
 closePopup.addEventListener("click", function () {
-  popup.classList.remove("active-popup");
+  popup.classList.remove("popup--active");
+  pageElement.classList.remove("page--inactive");
 });
 
 document.addEventListener("keydown", function (e) {
   if (e.keyCode === ESC_KEYCODE) {
-    popup.classList.remove("active-popup");
+    popup.classList.remove("popup--active");
+    pageElement.classList.remove("page--inactive");
   }
 });
 

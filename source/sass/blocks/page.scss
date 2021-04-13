@@ -4,6 +4,10 @@
   font-family: $font-main;
 }
 
+.page--inactive {
+  overflow: hidden;
+}
+
 @media (min-width: $tablet-width) {
   .page {
     display: flex;

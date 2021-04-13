@@ -92,13 +92,13 @@
   line-height: 32px;
 
   &::after {
-    background-image: url("../../img/phone-grey.svg");
+    background-image: url("../img/phone-grey.svg");
   }
 }
 
 .page-footer__contacts-link-mail {
   &::after {
-    background-image: url("../../img/letter.svg");
+    background-image: url("../img/letter.svg");
   }
 }
 
@@ -178,6 +178,7 @@
   flex-wrap: wrap;
   width: 288px;
 }
+
 .page-footer__more-offers-link {
   text-decoration: none;
   color: $basic-header-footer-contacts;
@@ -352,7 +353,7 @@
     display: block;
 
     &::after {
-      background-image: url("../../img/letter.svg");
+      background-image: url("../img/letter.svg");
     }
   }
 

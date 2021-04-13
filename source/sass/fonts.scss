@@ -3,7 +3,8 @@
   font-weight: 400;
   font-display: swap;
   src:
-    url("../fonts/Montserrat-Regular.woff") format("woff");
+    url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +12,8 @@
   font-weight: 600;
   font-display: swap;
   src:
-    url("../fonts/MontserratSemiBold.woff") format("woff");
+    url("../fonts/MontserratSemiBold.woff") format("woff"),
+    url("../fonts/MontserratSemiBold.woff2") format("woff2");
 }
 
 $font-main: "Montserrat", "Arial Black", sans-serif;
